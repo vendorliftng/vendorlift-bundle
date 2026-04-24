@@ -3,70 +3,215 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Customer Magnet Bundle | VendorLift</title>
+    <title>Stop Posting Into the Void | Vendorlift</title>
+    <meta name="description" content="Turn your social media and WhatsApp into a predictable 24/7 profit machine with the Vendorlift Content Engine and Customer Magnet bundle.">
+    
+    <meta property="og:title" content="Vendorlift | The WhatsApp Revenue System">
+    <meta property="og:description" content="Stop bleeding money on ads. Get the 7-Day Customer Magnet & 30-Day Content Engine Bundle today.">
+    <meta property="og:type" content="website">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandBlue: '#003399',
+                        brandGold: '#D5B641',
+                        brandDark: '#001f5c'
+                    }
+                }
+            }
+        }
+    </script>
+
     <style>
-        :root { --primary: #003399; --gold: #D5B641; --bg: #fdfdfd; --text: #1e293b; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background: var(--bg); color: var(--text); line-height: 1.7; }
-        .container { max-width: 700px; margin: 0 auto; padding: 1.5rem; background: white; }
-        .logo { text-align: center; padding: 20px; }
-        .logo img { width: 70px; }
-        header { text-align: center; border-bottom: 4px solid var(--primary); padding-bottom: 20px; margin-bottom: 30px; }
-        h1 { font-size: 2.2rem; color: var(--primary); line-height: 1.1; margin: 0; }
-        h2 { color: var(--primary); font-size: 1.6rem; margin-top: 40px; }
-        
-        .pain-point { border-left: 5px solid #ef4444; padding: 15px 20px; background: #fff1f2; margin: 20px 0; }
-        .action-block { text-align: center; padding: 25px; background: #f8fafc; border: 1px dashed var(--primary); margin: 25px 0; border-radius: 10px; }
-        
-        .btn { display: inline-block; background: var(--gold); color: var(--primary); padding: 15px 35px; border-radius: 5px; text-decoration: none; font-weight: 900; text-transform: uppercase; letter-spacing: 1px; transition: 0.3s; box-shadow: 0 4px 15px rgba(213, 182, 65, 0.4); }
-        .btn:hover { transform: scale(1.05); background: #c4a63b; }
-        
-        .price-tag { font-size: 1.8rem; font-weight: 800; color: var(--primary); margin-bottom: 15px; display: block; }
-        .urgent { color: #ef4444; font-weight: bold; text-decoration: underline; }
-        footer { text-align: center; padding: 40px; font-size: 0.9rem; color: #64748b; }
+        /* The Pulse CTA Animation */
+        .pulse-btn {
+            box-shadow: 0 0 0 0 rgba(213, 182, 65, 0.8);
+            animation: pulse-ring 2s infinite;
+        }
+        @keyframes pulse-ring {
+            0% { box-shadow: 0 0 0 0 rgba(213, 182, 65, 0.8); }
+            70% { box-shadow: 0 0 0 20px rgba(213, 182, 65, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(213, 182, 65, 0); }
+        }
+
+        /* Range Slider Styling */
+        input[type=range] {
+            accent-color: #003399;
+        }
+
+        /* FOMO Toast Animation */
+        .fomo-toast {
+            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+            transform: translateY(150%);
+            opacity: 0;
+        }
+        .fomo-toast.show {
+            transform: translateY(0);
+            opacity: 1;
+        }
     </style>
 </head>
-<body>
-    <div class="container">
-        <div class="logo"><img src="logo.png" alt="VendorLift"></div>
-        <header>
-            <h1>Status Views Don't Pay Bills. Systems Do.</h1>
-        </header>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased overflow-x-hidden">
 
-        <p>You have 200+ views on your WhatsApp status. You have a great product. But your bank app is silent. Why?</p>
+    <header class="bg-brandBlue text-white pt-16 pb-20 px-6 text-center">
+        <div class="max-w-3xl mx-auto">
+            <h1 id="dynamic-headline" class="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
+                Stop Posting Into the Void.
+            </h1>
+            <p class="text-lg md:text-xl text-blue-100 mb-10">
+                You are exhausting yourself posting 25 pictures a day, but your bank account is still empty. You are confusing "being visible" with "selling".
+            </p>
+            <a href="https://wa.me/2348088972097?text=I%20am%20tired%20of%20posting%20without%20sales.%20Help%20me%20fix%20it." class="pulse-btn inline-block bg-brandGold text-brandDark font-bold text-lg py-4 px-8 rounded-full hover:bg-yellow-500 transition-all">
+                Stop Wasting Time (Message Us)
+            </a>
+        </div>
+    </header>
 
-        <div class="pain-point">
-            <strong>The "Blank Screen" Trap:</strong> You want to post, but you don't know what to say. So you post a random picture and hope for the best. No one clicks.
-        </div>
-        <div class="action-block">
-            <p>Stop guessing. Use our <strong>30-Day Copy-Paste Content Calendar</strong> designed to force people to reply.</p>
-            <a href="YOUR_LINK" class="btn">Fix My Content Now</a>
-        </div>
+    <section class="py-16 px-6 bg-white">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-brandBlue mb-4">You Are Bleeding Money.</h2>
+            <p class="text-gray-600 mb-10">You are losing thousands of naira every single week simply because you reply to messages four hours late. Let's calculate the damage.</p>
+            
+            <div class="bg-gray-50 p-8 rounded-2xl shadow-lg border border-gray-100 mb-10">
+                <label for="hours-wasted" class="block text-lg font-bold text-gray-700 mb-4">Hours wasted posting & waiting per week:</label>
+                <input type="range" id="hours-wasted" min="1" max="40" value="10" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer mb-6">
+                <div class="flex justify-between text-sm text-gray-500 font-bold mb-6">
+                    <span>1 Hour</span>
+                    <span>40 Hours</span>
+                </div>
+                <div class="text-xl text-gray-700">Estimated Lost Revenue Per Month:</div>
+                <div id="lost-revenue" class="text-4xl font-extrabold text-red-600 mt-2">₦200,000</div>
+            </div>
 
-        <div class="pain-point">
-            <strong>The "Ghosting" Epidemic:</strong> Someone finally asks "How much?" You tell them. Then... silence. You just lost money because you didn't have a closing script.
+            <a href="https://wa.me/2348088972097?text=I%20need%20to%20automate%20my%20replies." class="pulse-btn inline-block bg-brandBlue text-white font-bold text-lg py-4 px-8 rounded-full hover:bg-blue-800 transition-all">
+                Automate My Replies
+            </a>
         </div>
-        <div class="action-block">
-            <p>Close 3x more deals with our <strong>12 Proven Closing Scripts</strong>. Never get ghosted again.</p>
-            <a href="YOUR_LINK" class="btn">Get My Scripts</a>
-        </div>
+    </section>
 
-        <div class="pain-point">
-            <strong>The "Manual" Grind:</strong> You are doing everything yourself. If you sleep, the business stops. You are a slave to your phone.
+    <section class="py-16 px-6 bg-gray-100">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-brandBlue mb-4">The Truth About Your Sales.</h2>
+            <p class="text-gray-700 text-lg mb-8">
+                You didn't lose the sale because of your price; you lost it because your profile looked like a ghost town with zero structure. Selling based on your "personality" leads to feast-or-famine revenue.
+            </p>
+            <a href="https://wa.me/2348088972097?text=Give%20me%20the%20Content%20Engine." class="pulse-btn inline-block bg-brandGold text-brandDark font-bold text-lg py-4 px-8 rounded-full hover:bg-yellow-500 transition-all">
+                Give Me The Content Engine
+            </a>
         </div>
-        <div class="action-block">
-            <p>Automate your growth with the <strong>VIP Retention Playbook</strong>. Build a machine that sells while you are offline.</p>
-            <a href="YOUR_LINK" class="btn">Automate My Sales</a>
+    </section>
+
+    <section class="py-20 px-6 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-brandBlue mb-4">Motivation Will Fail You. You Need A Machine.</h2>
+                <p class="text-xl text-gray-600">Introducing The 7-Day Customer Magnet & 30-Day Content Engine Bundle.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-gray-50 p-6 rounded-xl border-l-4 border-brandBlue shadow-sm">
+                    <h3 class="text-xl font-bold text-brandBlue mb-2">Stop Guessing What to Post</h3>
+                    <p class="text-gray-600">Get 30 days of strategic, copy-and-paste scripts mapped out so you never stare at a blank screen again.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl border-l-4 border-brandGold shadow-sm">
+                    <h3 class="text-xl font-bold text-brandBlue mb-2">The 5-Minute Speed Closing Rule</h3>
+                    <p class="text-gray-600">Set up automated 24/7 replies so you never lose another customer to a delayed response.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl border-l-4 border-brandBlue shadow-sm">
+                    <h3 class="text-xl font-bold text-brandBlue mb-2">Overcome Any Objection</h3>
+                    <p class="text-gray-600">Copy-paste the exact scripts to handle "It's too expensive" effortlessly and confidently close deals.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl border-l-4 border-brandGold shadow-sm">
+                    <h3 class="text-xl font-bold text-brandBlue mb-2">Dig Up The Hidden Goldmine</h3>
+                    <p class="text-gray-600">Extract predictable cash flow from past buyers instead of constantly begging strangers to buy.</p>
+                </div>
+            </div>
+
+            <div class="text-center bg-brandDark text-white rounded-2xl p-10 shadow-2xl">
+                <h3 class="text-2xl font-bold mb-4">Get The Complete Machine</h3>
+                <div class="flex justify-center items-center gap-4 mb-8">
+                    <span class="text-2xl text-gray-400 line-through decoration-red-500">₦10,000</span>
+                    <span class="text-5xl font-extrabold text-brandGold">₦5,999</span>
+                </div>
+                <p class="mb-8 text-gray-300">Instant Access. No trial and error. Just a proven system.</p>
+                
+                <a href="YOUR_SELAR_LINK_HERE" class="pulse-btn inline-block w-full md:w-auto bg-brandGold text-brandDark font-extrabold text-xl py-5 px-10 rounded-full hover:bg-yellow-500 transition-all">
+                    Buy Now (Instant Access)
+                </a>
+            </div>
         </div>
+    </section>
 
-        <section style="background: var(--primary); color: white; padding: 40px 20px; text-align: center; border-radius: 10px; margin-top: 50px;">
-            <h2 style="color: white; margin-top: 0;">The Full Customer Magnet Bundle</h2>
-            <p>Get the Calendar, the Magnet Strategy, the 12 Scripts, and the Playbook.</p>
-            <span class="price-tag" style="color: var(--gold);">ONLY ₦5,500</span>
-            <p class="urgent">Price increases to ₦15,000 soon.</p>
-            <a href="YOUR_LINK" class="btn" style="padding: 20px 50px; font-size: 1.5rem;">SECURE MY BUNDLE NOW</a>
-        </section>
-
-        <footer>&copy; 2026 VendorLift Digital Agency</footer>
+    <div id="fomo-ticker" class="fomo-toast fixed bottom-6 left-6 bg-white border-l-4 border-brandGold p-4 rounded-lg shadow-2xl z-50 flex items-center gap-3 max-w-xs">
+        <div class="bg-green-100 p-2 rounded-full">
+            <svg class="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+        </div>
+        <div>
+            <p id="fomo-text" class="text-sm font-bold text-gray-800">Someone just bought the bundle!</p>
+            <p class="text-xs text-gray-500">Just now</p>
+        </div>
     </div>
+
+    <script>
+        // 1. Dynamic Text Replacement (DTR)
+        const urlParams = new URLSearchParams(window.location.search);
+        const painParam = urlParams.get('pain');
+        const headlineElement = document.getElementById('dynamic-headline');
+        
+        if (painParam === 'low_sales') {
+            headlineElement.textContent = "Stop Bleeding Money on Ads.";
+        } else if (painParam === 'no_time') {
+            headlineElement.textContent = "Stop Wasting Hours on Dead End Chats.";
+        }
+
+        // 2. Cost of Pain Calculator
+        const slider = document.getElementById('hours-wasted');
+        const output = document.getElementById('lost-revenue');
+        
+        // Assumed baseline: 1 hour wasted = roughly 5,000 Naira lost potential revenue. 
+        // 4 weeks in a month. So: hours * 5000 * 4
+        function calculateLoss() {
+            const hours = slider.value;
+            const monthlyLoss = hours * 5000 * 4; 
+            output.textContent = "₦" + monthlyLoss.toLocaleString();
+        }
+        
+        slider.addEventListener('input', calculateLoss);
+        calculateLoss(); // Init on load
+
+        // 3. FOMO Ticker Logic
+        const fomoTicker = document.getElementById('fomo-ticker');
+        const fomoText = document.getElementById('fomo-text');
+        
+        const buyers = [
+            "Chika from Ikeja", "Ade from Surulere", "Ngozi from Abuja", 
+            "Emeka from Port Harcourt", "Tolu from Lekki", "Aisha from Kano"
+        ];
+        
+        function showFomo() {
+            // Pick a random buyer
+            const randomBuyer = buyers[Math.floor(Math.random() * buyers.length)];
+            const timeAgo = Math.floor(Math.random() * 15) + 1; // 1 to 15 mins ago
+            
+            fomoText.textContent = `${randomBuyer} bought the bundle!`;
+            fomoTicker.querySelector('.text-xs').textContent = `${timeAgo} mins ago`;
+            
+            fomoTicker.classList.add('show');
+            
+            // Hide after 5 seconds
+            setTimeout(() => {
+                fomoTicker.classList.remove('show');
+            }, 5000);
+        }
+
+        // Show first notification after 3 seconds, then every 15 seconds
+        setTimeout(() => {
+            showFomo();
+            setInterval(showFomo, 15000);
+        }, 3000);
+    </script>
 </body>
 </html>
