@@ -6,8 +6,8 @@
     <title>Customer Magnet Bundle | VendorLift</title>
     <style>
         :root {
-            --primary-color: #0f172a;
-            --accent-color: #16a34a;
+            --primary-color: #003399; /* VendorLift Deep Blue */
+            --accent-color: #D5B641; /* VendorLift Gold */
             --bg-color: #f8fafc;
             --text-color: #334155;
         }
@@ -29,9 +29,19 @@
             box-shadow: 0 4px 6px rgba(0,0,0,0.05);
         }
 
+        .logo-container {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .logo-container img {
+            max-width: 80px;
+            height: auto;
+        }
+
         header {
             text-align: center;
-            padding: 2rem 0;
+            padding: 1rem 0 2rem 0;
             border-bottom: 3px solid var(--primary-color);
         }
 
@@ -50,14 +60,14 @@
         }
 
         .problem-section {
-            background-color: #fee2e2;
+            background-color: #f8fafc;
             padding: 1.5rem;
-            border-left: 4px solid #ef4444;
+            border-left: 4px solid var(--primary-color);
             margin: 2rem 0;
         }
 
         .solution-section {
-            background-color: #f0fdf4;
+            background-color: #fcfbf4;
             padding: 1.5rem;
             border-left: 4px solid var(--accent-color);
             margin: 2rem 0;
@@ -80,19 +90,21 @@
             font-weight: bold;
             position: absolute;
             left: 0;
+            font-size: 1.2rem;
         }
 
         .cta-container {
             text-align: center;
             margin: 3rem 0;
-            padding: 2rem;
+            padding: 2.5rem 2rem;
             background-color: var(--primary-color);
             border-radius: 8px;
+            box-shadow: 0 10px 15px -3px rgba(0, 51, 153, 0.3);
         }
 
         .price {
             color: white;
-            font-size: 2rem;
+            font-size: 2.2rem;
             font-weight: bold;
             margin-bottom: 1.5rem;
         }
@@ -100,27 +112,37 @@
         .cta-button {
             display: inline-block;
             background-color: var(--accent-color);
-            color: white;
+            color: var(--primary-color);
             text-decoration: none;
-            font-size: 1.25rem;
-            font-weight: bold;
-            padding: 1rem 2.5rem;
+            font-size: 1.35rem;
+            font-weight: 900;
+            padding: 1rem 3rem;
             border-radius: 5px;
-            transition: background-color 0.3s ease;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
         .cta-button:hover {
-            background-color: #15803d;
+            background-color: #c4a63b;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
         }
 
         @media (max-width: 600px) {
             h1 { font-size: 2rem; }
             .container { padding: 1rem; }
+            .cta-button { padding: 1rem 2rem; width: 80%; }
         }
     </style>
 </head>
 <body>
     <div class="container">
+        
+        <div class="logo-container">
+            <img src="logo.png" alt="VendorLift Logo">
+        </div>
+
         <header>
             <h1>Stop Posting Into the Void. Turn Your WhatsApp Into a Predictable 24/7 Profit Machine.</h1>
         </header>
@@ -150,9 +172,9 @@
         </section>
 
         <div class="cta-container">
-            <p style="color: #e2e8f0; margin-bottom: 1rem;">Stop leaving your business growth to chance. Motivation fades, but systems endure.</p>
-            <div class="price">Get the Bundle for just ₦5,500</div>
-            <a href="#" class="cta-button">Get The Bundle Now</a>
+            <p style="color: #e2e8f0; margin-bottom: 1rem; font-size: 1.1rem;">Stop leaving your business growth to chance. Motivation fades, but systems endure.</p>
+            <div class="price">Get the Bundle for ₦5,500</div>
+            <a href="https://vendorlift.com.ng" class="cta-button">Get The Bundle Now</a>
         </div>
     </div>
 </body>
